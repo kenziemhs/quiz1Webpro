@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hometown — Kenzie Maheswara</title>
+  <meta name="description" content="Kenzie Maheswara — professional dark-mode personal website for university quiz.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/quiz1-kenzie-v8/assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/quiz1-kenzie-v8/" data-path="/quiz1-kenzie-v8">Q1 Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/quiz1-kenzie-v8/" data-path="/quiz1-kenzie-v8">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/quiz1-kenzie-v8/profile/" data-path="/quiz1-kenzie-v8/profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="/quiz1-kenzie-v8/hometown/" data-path="/quiz1-kenzie-v8/hometown">Hometown</a></li>
+          <li class="nav-item"><a class="nav-link" href="/quiz1-kenzie-v8/food/" data-path="/quiz1-kenzie-v8/food">Local Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="/quiz1-kenzie-v8/tourist/" data-path="/quiz1-kenzie-v8/tourist">Tourist Places</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="content" class="pb-5">
+
+<section class="py-5">
+  <div class="container">
+    <header class="mb-4">
+      <h1 class="h2">Semarang</h1>
+      <p class="lead-muted">Semarang is a coastal city in Central Java, Indonesia. It blends historical areas like Kota Lama with modern urban life.</p>
+    </header>
+    <div class="row g-4">
+      <div class="col-12 col-lg-7">
+        <div class="ratio ratio-16x9 thin-border">
+          <iframe title="Semarang map" src="https://www.google.com/maps?q=Semarang,Indonesia&output=embed" loading="lazy" style="border:0;"></iframe>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="card card-dark h-100">
+          <div class="card-body">
+            <h2 class="h5 card-title">Quick Facts</h2>
+            <p class="m-0">Semarang is the capital of Central Java province, located on the northern coast of Java island. It's a bustling port city with a rich history, serving as a major trade hub since the Dutch colonial era. The city is famous for its multicultural heritage, with a blend of Javanese, Chinese, and Dutch influences evident in its architecture, cuisine, and culture. Iconic landmarks like Lawang Sewu and the Old Town district (Kota Lama) showcase its colonial past, while places like Sam Poo Kong Temple highlight its strong Chinese heritage. Semarang is also known for its local spring rolls, called lumpia, a popular specialty.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="py-4 mt-auto">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <p class="m-0 small">© <span id="year"></span> Kenzie Maheswara — Minimal dark-mode site for a university quiz.</p>
+    <div class="small">Built with Bootstrap 5 · Accessible · Mobile-first</div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content card-dark">
+      <div class="modal-body">
+        <img src="" alt="" class="img-fluid" />
+        <p class="modal-caption mt-2 text-muted"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/quiz1-kenzie-v8/assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
